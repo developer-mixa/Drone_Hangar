@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Kovalenko_N_E
-  productName: NXR Drone Simulator
+  productName: Test
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.12156863, g: 0.12156863, b: 0.1254902, a: 1}
@@ -156,7 +156,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: Kovalenko_N_E.nibiru.vrs.unitydemo
+    Android: iksarus.viarus.apptest
     Standalone: unity.Nibiru.NibiruXRDemo_VR
     iPhone: com.nibiru.xr.unitydemo
     tvOS: com.nibiru.xr.unitydemo

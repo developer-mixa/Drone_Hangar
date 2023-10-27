@@ -90,7 +90,6 @@ namespace Vrs.Internal
             for (int i = 0; i < canvasGraphics.Count; ++i)
             {
                 var graphic = canvasGraphics[i];
-
                 if (graphic.depth == -1 || !graphic.raycastTarget)
                 {
                     continue;

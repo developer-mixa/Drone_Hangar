@@ -50,7 +50,7 @@ namespace DroneController
 
             #region PRIVATE VARIABLES
 
-            private int counterToControl = 0; //counter which determins what drone we are following
+            public int counterToControl = 0; //counter which determins what drone we are following
             private Vector3 velocitiCameraFollow;
 
             private float cameraYVelocity;

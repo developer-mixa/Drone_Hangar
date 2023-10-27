@@ -1302,19 +1302,22 @@ namespace Vrs.Internal
                 lastKeyAction = KeyAction;
             }
 
-            
-            
-            float leftKeyHor = Input.GetAxis("5th axis");
-            float leftKeyVer = Input.GetAxis("6th axis");
 
-            if (Application.platform == RuntimePlatform.Android && Event.current != null &&
-                (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)
-                                                   || Input.GetKeyUp(KeyCode.DownArrow) ||
-                                                   Input.GetKeyUp(KeyCode.UpArrow)
-                                                   || Input.GetKeyUp(KeyCode.Escape)))
+            try
             {
-                Debug.Log("KeyUp===>" + Event.current.keyCode.ToString());
+                float leftKeyHor = Input.GetAxis("5th axis");
+                float leftKeyVer = Input.GetAxis("6th axis");
+
+                if (Application.platform == RuntimePlatform.Android && Event.current != null &&
+                    (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)
+                                                       || Input.GetKeyUp(KeyCode.DownArrow) ||
+                                                       Input.GetKeyUp(KeyCode.UpArrow)
+                                                       || Input.GetKeyUp(KeyCode.Escape)))
+                {
+                    Debug.Log("KeyUp===>" + Event.current.keyCode.ToString());
+                }
             }
+            catch { }
         }
         
 

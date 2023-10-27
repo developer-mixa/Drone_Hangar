@@ -30,6 +30,7 @@ public class MenuController : MonoBehaviour
         prevCamPos = MainCam.transform.position;
         preCamOrient = MainCam.transform.rotation;
         switchFPV();
+        head.SetTrackRotation(true);
     }
 
     void Update()
@@ -45,7 +46,7 @@ public class MenuController : MonoBehaviour
         VrsViewer.Instance.UpdateCameraFov(70);
         MainCam.transform.SetParent(null); // Скрипт камеры не успевает на это среагирровать
         head.SetTrackRotation(false);
-        dCam.positionBehindDrone = new Vector3(0,0,0);
+        dCam.positionBehindDrone = new Vector3(0,2,-4);
         dCam.tpsFieldOfView = 110;
         dCam.enabled = true;
         dCam.inputEditorFPS = 1; // Вообще, это не должно требоваться, но ради отладки в редакторе необходимо
